@@ -25,8 +25,8 @@ public class PlayerInput : MonoBehaviour
     {
         if (_state)
         {
-            Vertical = Input.GetAxisRaw("Hoirzontal");
-            Horizontal = Input.GetAxisRaw("Horizontal");
+            Vertical = Input.GetAxis("Vertical");
+            Horizontal = Input.GetAxis("Horizontal");
             Fire = Input.GetButtonDown("Fire");
             if (Fire) OnFire.Invoke();
         }
