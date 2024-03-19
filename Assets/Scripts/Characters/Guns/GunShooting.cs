@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GunShooting : MonoBehaviour
+public class GunShooting : MonoBehaviour, IShootable
 {
     [Header("DefaultSettings")]
     [SerializeField] private Rigidbody BulletPrefab;
@@ -14,21 +14,17 @@ public class GunShooting : MonoBehaviour
     [SerializeField] private float DamageBullet;
     [SerializeField] private float ShootingDelay;
     private bool ShootingReady = true;
-    private void Awake()
-    {
-        PlayerInput.OnFire.AddListener(HandleFire);
-    }
 
-    private void HandleFire()
+    public void Shoot()
     {
-        if(ShootingReady)
+        if (ShootingReady)
         {
             StartCoroutine(shootingDelay());
             Rigidbody bullet = Instantiate(BulletPrefab, Muzzle.position, Quaternion.identity);
             var direction = Muzzle.position - Anchor.position;
             bullet.AddForce(direction * ForeBullet, ForceMode.VelocityChange);
             Bullet bulletScript = bullet.GetComponent<Bullet>();
-            bulletScript.Sender = "Player";
+            bulletScript.Sender = gameObject.transform.parent.gameObject.name;
             bulletScript.Damage = DamageBullet;
         }
     }

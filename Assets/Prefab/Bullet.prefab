@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7191035681251115305}
   - component: {fileID: 8238619146964319966}
   - component: {fileID: 8140549577358685450}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.962884, y: -1.99, z: 4.5320807}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -146,3 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33d3d0a680191847964da8196116377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sender: 
+  Damage: 0

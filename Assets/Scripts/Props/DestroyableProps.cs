@@ -11,6 +11,7 @@ public class DestroyableProps : MonoBehaviour,IDamageable
         Health -= damageValue;
         if (Health <= 0)
         {
+            EventManager.OnObjectDestroy.Invoke();
             Destroy(gameObject);
         }
     }
