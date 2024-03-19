@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
-    [SerializeField]
-    private float HealthMax = 5;
+    [SerializeField] private float HealthMax = 5;
     private float Health;
     private void Awake()
     {
         Health = HealthMax;
     }
-    public void ApplyDamage(int damageValue)
+    public void ApplyDamage(float damageValue)
     {
         Health -= damageValue;
     }
