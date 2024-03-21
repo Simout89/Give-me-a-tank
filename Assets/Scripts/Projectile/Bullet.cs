@@ -18,11 +18,12 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent(out IDamageable damageable))
+        if ((other.tag != Sender) && (other.TryGetComponent(out IDamageable damageable)) &&
+            !((Sender == "Item") && (other.tag == "PlayerObject")))
         {
             damageable.ApplyDamage(Damage);
         }
-        if(other.tag != Sender)
+        if ((other.tag != Sender) && (other.tag != "UpgradePlatform") && (other.name != "Bullet(Clone)"))
         {
             Destroy(gameObject);
         }

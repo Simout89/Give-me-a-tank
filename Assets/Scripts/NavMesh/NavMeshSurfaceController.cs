@@ -12,6 +12,7 @@ public class NavMeshSurfaceController : MonoBehaviour
     {
         meshSurface = GetComponent<NavMeshSurface>();
         EventManager.OnObjectDestroy.AddListener(HandleObjectDestroy);
+        EventManager.OnObjectPlace.AddListener(HandleObjectDestroy);
     }
 
     private void HandleObjectDestroy()

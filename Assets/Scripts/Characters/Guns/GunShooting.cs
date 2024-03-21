@@ -24,7 +24,7 @@ public class GunShooting : MonoBehaviour, IShootable
             var direction = Muzzle.position - Anchor.position;
             bullet.AddForce(direction * ForeBullet, ForceMode.VelocityChange);
             Bullet bulletScript = bullet.GetComponent<Bullet>();
-            bulletScript.Sender = gameObject.transform.parent.gameObject.name;
+            bulletScript.Sender = transform.root.gameObject.tag;
             bulletScript.Damage = DamageBullet;
         }
     }
