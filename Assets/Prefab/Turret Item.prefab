@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1053136470944574276}
   - component: {fileID: 1200639332158554695}
   - component: {fileID: 7287969296585794653}
-  - component: {fileID: 9155231114667586404}
   m_Layer: 7
   m_Name: Turret Item
   m_TagString: Item
@@ -49,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedAnim: 3
+  id: 
 --- !u!65 &7287969296585794653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70,19 +70,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9155231114667586404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715900396517827212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba08ecc7afe2eba4eb74028b94130575, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 
 --- !u!1 &1912046672644782939
 GameObject:
   m_ObjectHideFlags: 0

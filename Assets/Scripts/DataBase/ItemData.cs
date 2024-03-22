@@ -3,8 +3,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class ItemData : ScriptableObject
 {
-    public string itemName;
-    public string id;
-    public GameObject ItemOnGround;
-    public GameObject Item;
+    [field: SerializeField] public string itemName { get; private set; }
+    [field: SerializeField] public string id { get; private set; }
+    [field: SerializeField] public GameObject ItemOnGround { get; private set; }
+    [field: SerializeField] public GameObject Item { get; private set; }
 }

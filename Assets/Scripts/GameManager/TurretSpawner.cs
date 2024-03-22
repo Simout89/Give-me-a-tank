@@ -8,7 +8,9 @@ public class TurretSpawner : MonoBehaviour
     private void Awake()
     {
         GameObject gameObject = Instantiate(DataBase.GetItemByID(ID).ItemOnGround, transform.position, Quaternion.identity);
-        ItemInformation itemInformation = gameObject.GetComponent<ItemInformation>();
-        itemInformation.ID = ID;
+        if(gameObject.TryGetComponent(out IItem iItem))
+        {
+            iItem.ID = ID;
+        }
     }
 }

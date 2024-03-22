@@ -17,9 +17,9 @@ public class PlayerInventory : MonoBehaviour
     }
     private void CollectItem(Collider other)
     {
-        if ((other.tag == "Item") && other.TryGetComponent(out ItemInformation itemInformation))
+        if ((other.tag == "Item") && other.TryGetComponent(out IItem iItem))
         {
-            Inventory = itemInformation.ID;
+            Inventory = iItem.ID;
         }
     }
     //private void PlaceItem(Collider other)

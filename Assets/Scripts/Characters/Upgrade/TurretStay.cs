@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretStay : MonoBehaviour
+public class TurretStay : MonoBehaviour, IItem
 {
     private GameObject[] enemy;
     private GameObject closest;
     [SerializeField] private GameObject Anchor;
     [SerializeField] private float Distance = 5f;
     private IShootable[] Guns;
+
+    public string ID { get; set; }
+
     private void FixedUpdate()
     {
         enemy = GameObject.FindGameObjectsWithTag("Enemy");

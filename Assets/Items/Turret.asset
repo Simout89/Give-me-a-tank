@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c05f04a25d2f84d82cf9edfd04d321, type: 3}
   m_Name: Turret
   m_EditorClassIdentifier: 
-  itemName: Turret
-  id: 2
-  ItemOnGround: {fileID: 715900396517827212, guid: 35e2cb73df1af5c4fa6bfdbb563dccf6, type: 3}
-  Item: {fileID: 8877700950580887499, guid: 8cf39eeb893907445be99124c530ec67, type: 3}
+  <itemName>k__BackingField: Turret
+  <id>k__BackingField: 2
+  <ItemOnGround>k__BackingField: {fileID: 715900396517827212, guid: 35e2cb73df1af5c4fa6bfdbb563dccf6, type: 3}
+  <Item>k__BackingField: {fileID: 8877700950580887499, guid: 8cf39eeb893907445be99124c530ec67, type: 3}
