@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
         {
             damageable.ApplyDamage(Damage);
         }
-        if ((other.tag != Sender) && (other.tag != "UpgradePlatform") && (other.name != "Bullet(Clone)"))
+        if ((other.tag != Sender) && (other.tag != "UpgradePlatform") && (other.name != "Bullet(Clone)") && (other.tag != "Item"))
         {
             Destroy(gameObject);
         }

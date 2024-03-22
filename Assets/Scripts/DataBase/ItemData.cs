@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "DataBase/ItemData")]
 public class ItemData : ScriptableObject
 {
     [field: SerializeField] public string itemName { get; private set; }

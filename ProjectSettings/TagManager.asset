@@ -10,6 +10,7 @@ TagManager:
   - UpgradePlatform
   - Enemy
   - PlayerObject
+  - EnemySpawner
   layers:
   - Default
   - TransparentFX
