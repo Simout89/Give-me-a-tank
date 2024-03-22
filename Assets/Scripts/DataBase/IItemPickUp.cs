@@ -1,0 +1,4 @@
+interface IItemPickUp
+{
+    void PickUp();
+}

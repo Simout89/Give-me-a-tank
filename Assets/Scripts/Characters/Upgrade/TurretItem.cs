@@ -3,11 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretItem : MonoBehaviour, IItem
+public class TurretItem : MonoBehaviour, IItem, IItemPickUp
 {
     [SerializeField] private float SpeedAnim = 2f;
     private Vector3 UpPos;
     public string ID { get; set; }
+
+    public void PickUp()
+    {
+        DOTween.KillAll();
+        Destroy(gameObject);
+    }
 
     private void Awake()
     {
@@ -15,13 +21,5 @@ public class TurretItem : MonoBehaviour, IItem
         UpPos = transform.position;
         UpPos.y += 0.2f;
         transform.DOMove(UpPos, SpeedAnim * 0.5f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            DOTween.KillAll();
-            Destroy(gameObject);
-        }    
     }
 }
