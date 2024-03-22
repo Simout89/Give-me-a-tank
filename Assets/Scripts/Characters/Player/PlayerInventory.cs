@@ -13,7 +13,11 @@ public class PlayerInventory : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        CollectItem(other);
+        if(other.TryGetComponent(out IItemPickUp itemPickUp))
+        {
+            CollectItem(other);
+            itemPickUp.PickUp();
+        }
     }
     private void CollectItem(Collider other)
     {
