@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3040506475231532536}
   m_Layer: 3
   m_Name: Gun
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 8438621830200378902}
   m_Layer: 3
   m_Name: Muzzle
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 1118853362209093415}
   m_Layer: 3
   m_Name: AnchorGun
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

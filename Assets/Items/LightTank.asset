@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45c05f04a25d2f84d82cf9edfd04d321, type: 3}
-  m_Name: Turret
+  m_Name: LightTank
   m_EditorClassIdentifier: 
-  <itemName>k__BackingField: Turret
-  <id>k__BackingField: 0
-  <ItemOnGround>k__BackingField: {fileID: 715900396517827212, guid: 35e2cb73df1af5c4fa6bfdbb563dccf6, type: 3}
-  <Item>k__BackingField: {fileID: 8877700950580887499, guid: 8cf39eeb893907445be99124c530ec67, type: 3}
+  <itemName>k__BackingField: LightTank
+  <id>k__BackingField: 1
+  <ItemOnGround>k__BackingField: {fileID: 2176816173150214943, guid: a898efc26a0c9464c84a13230795d277, type: 3}
+  <Item>k__BackingField: {fileID: 0}

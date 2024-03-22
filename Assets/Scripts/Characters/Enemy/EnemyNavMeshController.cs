@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyNavMeshController : MonoBehaviour
+public class EnemyNavMeshController : MonoBehaviour, IItem
 {
     private IShootable[] Guns;
     private NavMeshAgent agent;
@@ -14,6 +14,9 @@ public class EnemyNavMeshController : MonoBehaviour
     [SerializeField] private float Distance = 5f;
     [SerializeField] private float RageSpeed = 1f;
     private int state = 0;  // 0 - патруль ,    1 - атака базы
+
+    public string ID { get; set; }
+
     private void Awake()
     {
         Base = GameObject.FindGameObjectWithTag("Base");
@@ -21,26 +24,30 @@ public class EnemyNavMeshController : MonoBehaviour
         Points = GameObject.FindGameObjectsWithTag("EnemyPoint");
         GetNewPoint();
     }
-    private void FixedUpdate()
+    private void SwitchState()
     {
-        Shoot();
-        switch(state)
+        switch (state)
         {
             case 0:
                 {
                     if (Vector3.Distance(SelectedPoint.position, transform.position) < 0.3f)
                         GetNewPoint();
-                };break;
+                }; break;
             case 1:
                 {
                     agent.SetDestination(Base.transform.position);
                     agent.speed = RageSpeed;
-                };break;
+                }; break;
         }
-        if(Vector3.Distance(Base.transform.position, transform.position) < Distance)
+        if (Vector3.Distance(Base.transform.position, transform.position) < Distance)
         {
             state = 1;
         }
+    }
+    private void FixedUpdate()
+    {
+        Shoot();
+        SwitchState();
     }
     private void Shoot()
     {
