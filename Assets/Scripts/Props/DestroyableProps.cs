@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class DestroyableProps : MonoBehaviour,IDamageable
 {
+    [SerializeField] private GameObject[] Stages;
     [SerializeField] private float HealthMax;
     private float Health;
     public void ApplyDamage(float damageValue)
     {
+
         Health -= damageValue;
         if (Health <= 0)
         {

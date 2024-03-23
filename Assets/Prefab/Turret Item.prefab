@@ -48,7 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedAnim: 3
-  id: 
 --- !u!65 &7287969296585794653
 BoxCollider:
   m_ObjectHideFlags: 0
