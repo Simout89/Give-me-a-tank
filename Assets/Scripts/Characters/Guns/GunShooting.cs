@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GunShooting : MonoBehaviour, IShootable
+public class GunShooting : MonoBehaviour, IShootable, IGunChangeSettings
 {
     [Header("DefaultSettings")]
     [SerializeField] private Rigidbody BulletPrefab;
@@ -14,6 +14,11 @@ public class GunShooting : MonoBehaviour, IShootable
     [SerializeField] private float DamageBullet;
     [SerializeField] private float ShootingDelay;
     private bool ShootingReady = true;
+
+    public void FireRate(float fireRate)
+    {
+        ShootingDelay /= fireRate;
+    }
 
     public void Shoot()
     {

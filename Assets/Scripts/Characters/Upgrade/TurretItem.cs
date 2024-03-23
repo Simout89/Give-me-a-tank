@@ -11,7 +11,7 @@ public class TurretItem : MonoBehaviour, IItem, IItemPickUp
 
     public void PickUp()
     {
-        DOTween.KillAll();
+        DOTween.Kill(gameObject);
         Destroy(gameObject);
     }
 
