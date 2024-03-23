@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private string FirstLevel = "";
     public void PlayButton()
     {
-        SceneManager.LoadScene(FirstLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void ExitButton()
     {

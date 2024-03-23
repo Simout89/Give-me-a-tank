@@ -218,8 +218,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2034076848}
   - {fileID: 473430980}
+  - {fileID: 2034076848}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6949,7 +6949,7 @@ MonoBehaviour:
   ArmoredCar: 1
   Medium: 1
   Heavy: 1
-  MaxTankOnScene: 2
+  MaxTankOnScene: 1
   SpawnDelay: 1
   TotalTank: 0
 --- !u!4 &1120248349
