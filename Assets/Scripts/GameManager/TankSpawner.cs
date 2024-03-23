@@ -37,10 +37,13 @@ public class TankSpawner : MonoBehaviour
             if (Tank[i] != 0)
             {
                 Tank[i]--;
+                TotalTank--;
                 GameObject gameObject = Instantiate(DataBase.GetItemByID((i + 1).ToString()).ItemOnGround, Spawner[rnd.Next(0,Spawner.Length)].transform.position, Quaternion.identity);
                 StartCoroutine(Delay());
             }
         }
+        if ((TotalTank == 0) && ((GameObject.FindGameObjectsWithTag("Enemy").Length == 0)))
+            EventManager.OnGameWin.Invoke();
     }
     private IEnumerator Delay()
     {

@@ -19,7 +19,9 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if ((other.tag != Sender) && (other.TryGetComponent(out IDamageable damageable)) &&
-            !((Sender == "Item") && (other.tag == "PlayerObject")))
+            !((Sender == "Item") && (other.tag == "PlayerObject"))
+            &&
+            !((Sender == "Item") && (other.tag == "Player")))
         {
             damageable.ApplyDamage(Damage);
         }

@@ -13,5 +13,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public void ApplyDamage(float damageValue)
     {
         Health -= damageValue;
+        if(Health <= 0)
+        {
+            EventManager.OnGameLose.Invoke();
+        }
     }
 }
