@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -18,11 +19,18 @@ public class EnemyNavMeshController : MonoBehaviour
 
     private void Awake()
     {
+        EventManager.OnGameLose.AddListener(HandeGameStop);
         Base = GameObject.FindGameObjectWithTag("Base");
         agent = GetComponent<NavMeshAgent>();
         Points = GameObject.FindGameObjectsWithTag("EnemyPoint");
         GetNewPoint();
     }
+
+    private void HandeGameStop()
+    {
+        state = 2;
+    }
+
     private void SwitchState()
     {
         switch (state)
@@ -37,11 +45,13 @@ public class EnemyNavMeshController : MonoBehaviour
                     agent.SetDestination(Base.transform.position);
                     agent.speed = RageSpeed;
                 }; break;
+                case 2:
+                {
+                    agent.isStopped = true;
+                };break;
         }
-        if (Vector3.Distance(Base.transform.position, transform.position) < Distance)
-        {
-            state = 1;
-        }
+            if ((state != 2) && (Vector3.Distance(Base.transform.position, transform.position) < Distance))
+                state = 1;
     }
     private void FixedUpdate()
     {
@@ -62,4 +72,5 @@ public class EnemyNavMeshController : MonoBehaviour
         SelectedPoint = Points[rnd.Next(0, Points.Length)].transform;
         agent.SetDestination(SelectedPoint.position);
     }
+
 }
