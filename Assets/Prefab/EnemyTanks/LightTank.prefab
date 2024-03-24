@@ -155,6 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxEnemyHealth: 2
+  ChanceDropItem: 5
+  ItemCount: 1
   ShieldGameObject: {fileID: 7584087818067738747}
   Health: 0
 --- !u!1 &4249541738625960708

@@ -6664,7 +6664,7 @@ GameObject:
   - component: {fileID: 1231086667}
   m_Layer: 6
   m_Name: Cube (183)
-  m_TagString: Untagged
+  m_TagString: PlayerObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9711,7 +9711,7 @@ GameObject:
   - component: {fileID: 1684055040}
   m_Layer: 6
   m_Name: Cube (184)
-  m_TagString: Untagged
+  m_TagString: PlayerObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10492,7 +10492,7 @@ GameObject:
   - component: {fileID: 1885357093}
   m_Layer: 6
   m_Name: Cube (185)
-  m_TagString: Untagged
+  m_TagString: PlayerObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12237,10 +12237,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3196316144517275718, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3320753990237957412, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_Name
       value: GameObject
       objectReference: {fileID: 0}
+    - target: {fileID: 3675395460149615429, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 775d9e9ead510bf4aa1eae57fedb5382, type: 2}
+    - target: {fileID: 4131356427823401900, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4949e2fdaa7c1c46ab7ebc9d93bdd44, type: 2}
+    - target: {fileID: 4726248663684656158, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a126738a8ac2bab40895f7cd6882f666, type: 2}
     - target: {fileID: 8697987169343405746, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.9077373
