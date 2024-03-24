@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour,IDamageable, IEnemyShield, IItem
+public class EnemyHealth : MonoBehaviour,IDamageable , IEnemyShield, IItem
 {
     [SerializeField] private float MaxEnemyHealth = 2;
     [SerializeField] private GameObject ShieldGameObject;
