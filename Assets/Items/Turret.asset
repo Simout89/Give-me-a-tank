@@ -16,3 +16,5 @@ MonoBehaviour:
   <id>k__BackingField: 0
   <ItemOnGround>k__BackingField: {fileID: 715900396517827212, guid: 35e2cb73df1af5c4fa6bfdbb563dccf6, type: 3}
   <Item>k__BackingField: {fileID: 8877700950580887499, guid: 8cf39eeb893907445be99124c530ec67, type: 3}
+  <Score>k__BackingField: 0
+  <LifeTime>k__BackingField: 0

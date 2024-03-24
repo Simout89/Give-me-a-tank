@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour,IDamageable, IEnemyShield
+public class EnemyHealth : MonoBehaviour,IDamageable, IEnemyShield, IItem
 {
     [SerializeField] private float MaxEnemyHealth = 2;
     [SerializeField] private GameObject ShieldGameObject;
     [HideInInspector]
     public float Health;
+
+    public string ID { get; set; }
+
     private void Awake()
     {
         Health = MaxEnemyHealth;
@@ -18,6 +21,7 @@ public class EnemyHealth : MonoBehaviour,IDamageable, IEnemyShield
         Health -= damageValue;
         if (Health <= 0)
         {
+            ScoreOnScene.OnGetScore.Invoke(DataBase.GetItemByID(ID).Score);
             EventManager.OnObjectDestroy.Invoke();
             Destroy(gameObject);
         }

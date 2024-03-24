@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-public class TankSpawner : MonoBehaviour
+public class TankSpawner : MonoBehaviour, IItem
 {
     [Header("TankCount")]
     [SerializeField] private int Light = 1;
@@ -17,6 +17,9 @@ public class TankSpawner : MonoBehaviour
     private int[] Tank;
     private GameObject[] Spawner;
     private bool spawnDelay = false;
+
+    public string ID { get; set; }
+
     private void Awake()
     {
         Spawner = GameObject.FindGameObjectsWithTag("EnemySpawner");
@@ -39,6 +42,10 @@ public class TankSpawner : MonoBehaviour
                 Tank[i]--;
                 TotalTank--;
                 GameObject gameObject = Instantiate(DataBase.GetItemByID((i + 1).ToString()).ItemOnGround, Spawner[rnd.Next(0,Spawner.Length)].transform.position, Quaternion.identity);
+                if (gameObject.TryGetComponent(out IItem iItem))
+                {
+                    iItem.ID = (i + 1).ToString();
+                }
                 StartCoroutine(Delay());
             }
         }

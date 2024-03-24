@@ -7,4 +7,6 @@ public class ItemData : ScriptableObject
     [field: SerializeField] public string id { get; private set; }
     [field: SerializeField] public GameObject ItemOnGround { get; private set; }
     [field: SerializeField] public GameObject Item { get; private set; }
+    [field: SerializeField] public float Score { get; private set; }
+    [field: SerializeField] public float LifeTime { get; private set; }
 }

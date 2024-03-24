@@ -19,7 +19,17 @@ public class UpgradePlatform : MonoBehaviour
             GameObject gameObject = Instantiate(DataBase.GetItemByID(playerInventory.Inventory).Item, PlacePoint, Quaternion.identity);
             Slot = gameObject;
             EventManager.OnObjectPlace.Invoke();
+            if(DataBase.GetItemByID(playerInventory.Inventory).LifeTime != 0)
+            {
+                StartCoroutine(DeleteDelay(DataBase.GetItemByID(playerInventory.Inventory).LifeTime, gameObject));
+            }
             playerInventory.Inventory = "-1";
         }
+    }
+    IEnumerator DeleteDelay(float time, GameObject item)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(item);
+        Slot = null;
     }
 }

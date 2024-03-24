@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyNavMeshController : MonoBehaviour, IItem
+public class EnemyNavMeshController : MonoBehaviour
 {
     private IShootable[] Guns;
     private NavMeshAgent agent;
@@ -15,7 +15,6 @@ public class EnemyNavMeshController : MonoBehaviour, IItem
     [SerializeField] private float RageSpeed = 1f;
     private int state = 0;  // 0 - патруль ,    1 - атака базы
 
-    public string ID { get; set; }
 
     private void Awake()
     {
