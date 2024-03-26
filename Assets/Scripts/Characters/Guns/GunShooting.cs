@@ -9,6 +9,7 @@ public class GunShooting : MonoBehaviour, IShootable, IGunChangeSettings
     [SerializeField] private Rigidbody BulletPrefab;
     [SerializeField] private Transform Muzzle;
     [SerializeField] private Transform Anchor;
+    [SerializeField] private ParticleSystem FireParticle;
     [Header("Settings")]
     [SerializeField] private float ForeBullet;
     [SerializeField] private float DamageBullet;
@@ -31,6 +32,7 @@ public class GunShooting : MonoBehaviour, IShootable, IGunChangeSettings
             Bullet bulletScript = bullet.GetComponent<Bullet>();
             bulletScript.Sender = transform.root.gameObject.tag;
             bulletScript.Damage = DamageBullet;
+            FireParticle.Play();
         }
     }
     private IEnumerator shootingDelay()
