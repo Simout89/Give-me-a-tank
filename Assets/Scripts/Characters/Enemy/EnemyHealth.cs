@@ -29,9 +29,11 @@ public class EnemyHealth : MonoBehaviour,IDamageable , IEnemyShield, IItem
         if (Health <= 0)
         {
             System.Random rnd = new System.Random();
+            var itemdroppos = transform.position;
+            itemdroppos.y += 0.3f;
             if (rnd.Next(0, ChanceDropItem) == 0)
             {
-                Instantiate(db.GetItemByID(rnd.Next(5, 5 + ItemCount)).ItemOnGround, transform.position, Quaternion.identity);
+                Instantiate(db.GetItemByID(rnd.Next(5, 5 + ItemCount)).ItemOnGround, itemdroppos, Quaternion.identity);
             }
             ScoreOnScene.OnGetScore.Invoke(db.GetItemByID(ID).Score);
             EventManager.OnObjectDestroy.Invoke();

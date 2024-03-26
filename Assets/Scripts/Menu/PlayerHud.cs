@@ -19,20 +19,24 @@ public class PlayerHud : MonoBehaviour
     private void HandleGameWin()
     {
         WinMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     private void HandleGameLose()
     {
         LoseMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
     public void RestartButton()
     {
         DOTween.KillAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
     }
     public void NextButton()
     {
         DOTween.KillAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
     }
 }
