@@ -14,10 +14,12 @@ public class EnemyHealth : MonoBehaviour,IDamageable , IEnemyShield, IItem
     [HideInInspector]
     public float Health;
 
+    
     public string ID { get; set; }
-
+    private DataBase db;
     private void Awake()
     {
+        db = Resources.Load<DataBase>("Database");
         Health = MaxEnemyHealth;
     }
 
@@ -26,7 +28,14 @@ public class EnemyHealth : MonoBehaviour,IDamageable , IEnemyShield, IItem
         Health -= damageValue;
         if (Health <= 0)
         {
-            StartCoroutine(DeathDelay());
+            System.Random rnd = new System.Random();
+            if (rnd.Next(0, ChanceDropItem) == 0)
+            {
+                Instantiate(db.GetItemByID(rnd.Next(5, 5 + ItemCount).ToString()).ItemOnGround, transform.position, Quaternion.identity);
+            }
+            ScoreOnScene.OnGetScore.Invoke(db.GetItemByID(ID).Score);
+            EventManager.OnObjectDestroy.Invoke();
+            Destroy(gameObject);
         }
         ShieldGameObject.SetActive(false);
     }
@@ -40,18 +49,5 @@ public class EnemyHealth : MonoBehaviour,IDamageable , IEnemyShield, IItem
     {
         yield return new WaitForSeconds(0.01f);
         Health+= health;
-    }
-    private IEnumerator DeathDelay()
-    {
-        System.Random rnd = new System.Random();
-        if (rnd.Next(0, ChanceDropItem) == 0)
-        {
-            Instantiate(DataBase.GetItemByID(rnd.Next(5, 5 + ItemCount).ToString()).ItemOnGround, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(0.1f);
-        }
-        ScoreOnScene.OnGetScore.Invoke(DataBase.GetItemByID(ID).Score);
-        EventManager.OnObjectDestroy.Invoke();
-        yield return new WaitForSeconds(0.1f);
-        Destroy(gameObject);
     }
 }

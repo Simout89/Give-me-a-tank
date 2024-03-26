@@ -53,7 +53,7 @@ public class EnemyNavMeshController : MonoBehaviour
             if ((state != 2) && (Vector3.Distance(Base.transform.position, transform.position) < Distance))
                 state = 1;
     }
-    private void FixedUpdate()
+    private void Update()
     {
         Shoot();
         SwitchState();
