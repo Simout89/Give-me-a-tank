@@ -7,7 +7,7 @@ public class TurretItem : MonoBehaviour, IItem, IItemPickUp
 {
     [SerializeField] private float SpeedAnim = 2f;
     private Vector3 UpPos;
-    public string ID { get; set; }
+    public int ID { get; set; }
 
     public void PickUp()
     {

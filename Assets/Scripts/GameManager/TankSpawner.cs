@@ -18,7 +18,7 @@ public class TankSpawner : MonoBehaviour, IItem
     private GameObject[] Spawner;
     private bool spawnDelay = false;
     private DataBase db;
-    public string ID { get; set; }
+    public int ID { get; set; }
 
     private void Awake()
     {
@@ -42,10 +42,10 @@ public class TankSpawner : MonoBehaviour, IItem
             {
                 Tank[i]--;
                 TotalTank--;
-                GameObject gameObject = Instantiate(db.GetItemByID((i + 1).ToString()).ItemOnGround, Spawner[rnd.Next(0,Spawner.Length)].transform.position, Quaternion.identity);
+                GameObject gameObject = Instantiate(db.GetItemByID(i + 1).ItemOnGround, Spawner[rnd.Next(0,Spawner.Length)].transform.position, Quaternion.identity);
                 if (gameObject.TryGetComponent(out IItem iItem))
                 {
-                    iItem.ID = (i + 1).ToString();
+                    iItem.ID = i + 1;
                 }
                 StartCoroutine(Delay());
             }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurretSpawner : MonoBehaviour
 {
-    [SerializeField] private string ID;
+    [SerializeField] private int ID;
     private void Awake()
     {
         var db = Resources.Load<DataBase>("Database");

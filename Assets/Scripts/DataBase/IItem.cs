@@ -1,4 +1,4 @@
 interface IItem
 {
-    string ID { get; set; }
+    int ID { get; set; }
 }

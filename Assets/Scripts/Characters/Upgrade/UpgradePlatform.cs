@@ -14,7 +14,7 @@ public class UpgradePlatform : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player" && other.TryGetComponent(out PlayerInventory playerInventory) && (playerInventory.Inventory != "-1") && Slot == null)
+        if(other.tag == "Player" && other.TryGetComponent(out PlayerInventory playerInventory) && (playerInventory.Inventory != -1) && Slot == null)
         {
             PlacePoint = transform.position;
             PlacePoint.x = (int)PlacePoint.x;
@@ -28,7 +28,7 @@ public class UpgradePlatform : MonoBehaviour
             {
                 StartCoroutine(DeleteDelay(db.GetItemByID(playerInventory.Inventory).LifeTime, gameObject));
             }
-            playerInventory.Inventory = "-1";
+            playerInventory.Inventory = -1;
         }
     }
     IEnumerator DeleteDelay(float time, GameObject item)
