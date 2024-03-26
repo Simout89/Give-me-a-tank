@@ -10,7 +10,7 @@ public class TurretStay : MonoBehaviour, IItem
     [SerializeField] private float Distance = 5f;
     private IShootable[] Guns;
 
-    public string ID { get; set; }
+    public int ID { get; set; }
 
     private void FixedUpdate()
     {

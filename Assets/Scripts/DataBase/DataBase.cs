@@ -3,26 +3,50 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class DataBase : MonoBehaviour
+[CreateAssetMenu(menuName = "DataBase/ItemDataBase")]
+public class DataBase : ScriptableObject
 {
-    public ItemDataBase items;
-    private static DataBase instance;
+    [SerializeField] private List<ItemData> _itemDataBase;
 
-    private void Awake()
+    [ContextMenu("Set IDs")]
+    public void SetItemIDs()
     {
-        if(instance == null)
+        _itemDataBase = new List<ItemData>();
+
+        var foundItems = Resources.LoadAll<ItemData>("Items").OrderBy(i => i.id).ToList();
+        
+        var hasIDInRange = foundItems.Where(i => i.id != -1 && i.id < foundItems.Count).OrderBy(i => i.id).ToList();
+        var hasIDNotInRange = foundItems.Where(i => i.id != -1 && i.id >= foundItems.Count).OrderBy(i => i.id).ToList();
+        var noID = foundItems.Where(i => i.id <= -1).ToList();
+        var index = 0;
+
+        for (int i = 0; i < foundItems.Count; i++)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }else
+            ItemData itemToAdd;
+            itemToAdd = hasIDInRange.Find(d => d.id == i);
+
+            if(itemToAdd != null)
+            {
+                _itemDataBase.Add(itemToAdd);
+            }
+            else if(index < noID.Count)
+            {
+                noID[index].id = i;
+                itemToAdd = noID[index];
+                index++;
+                _itemDataBase.Add(itemToAdd);
+            }
+        }
+
+        foreach (var item in hasIDNotInRange)
         {
-            Destroy(gameObject);
-        }    
+            _itemDataBase.Add(item);
+        }
     }
 
-    public static ItemData GetItemByID(string ID)
+    public ItemData GetItemByID(int ID)
     {
-        return instance.items.allItems.FirstOrDefault(i => i.id == ID); 
+        return _itemDataBase.Find(i => i.id == ID);
         //foreach(ItemData item in instance.items.allItems)
         //{
         //    if(item.id == ID)

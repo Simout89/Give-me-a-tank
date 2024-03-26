@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class TurretSpawner : MonoBehaviour
 {
-    [SerializeField] private string ID;
+    [SerializeField] private int ID;
     private void Awake()
     {
-        GameObject gameObject = Instantiate(DataBase.GetItemByID(ID).ItemOnGround, transform.position, Quaternion.identity);
+        var db = Resources.Load<DataBase>("Database");
+        GameObject gameObject = Instantiate(db.GetItemByID(ID).ItemOnGround, transform.position, Quaternion.identity);
         if(gameObject.TryGetComponent(out IItem iItem))
         {
             iItem.ID = ID;

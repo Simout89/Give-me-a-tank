@@ -5,11 +5,11 @@ using System.Xml;
 using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
-    public string Inventory;
+    public int Inventory;
 
     private void Awake()
     {
-        Inventory = "-1";
+        Inventory = -1;
     }
     private void OnTriggerEnter(Collider other)
     {

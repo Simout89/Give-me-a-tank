@@ -4,7 +4,7 @@ using UnityEngine;
 public class ItemData : ScriptableObject
 {
     [field: SerializeField] public string itemName { get; private set; }
-    [field: SerializeField] public string id { get; private set; }
+    [field: SerializeField] public int id { get; set; }
     [field: SerializeField] public GameObject ItemOnGround { get; private set; }
     [field: SerializeField] public GameObject Item { get; private set; }
     [field: SerializeField] public float Score { get; private set; }
