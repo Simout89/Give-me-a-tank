@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour,IDamageable , IEnemyShield, IItem
     [SerializeField] private int ItemCount = 1;
     [Header("GameObject")]
     [SerializeField] private GameObject ShieldGameObject;
+    [SerializeField] private GameObject DestrotyParticle;
     [HideInInspector]
     public float Health;
 
@@ -37,6 +38,7 @@ public class EnemyHealth : MonoBehaviour,IDamageable , IEnemyShield, IItem
             }
             ScoreOnScene.OnGetScore.Invoke(db.GetItemByID(ID).Score);
             EventManager.OnObjectDestroy.Invoke();
+            Instantiate(DestrotyParticle, itemdroppos, Quaternion.identity);
             Destroy(gameObject);
         }
         ShieldGameObject.SetActive(false);

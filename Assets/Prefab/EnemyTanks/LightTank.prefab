@@ -5046,6 +5046,7 @@ MonoBehaviour:
   ChanceDropItem: 5
   ItemCount: 1
   ShieldGameObject: {fileID: 3661565880678262805}
+  DestrotyParticle: {fileID: 6380802408874117070, guid: 43de0313d08672d449f9c381de4b811b, type: 3}
   Health: 0
 --- !u!1 &2580977411914232599
 GameObject:

@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] public string Sender;
     [SerializeField] public float Damage;
+    [SerializeField] private GameObject HitPartricle;
     private void Awake()
     {
         StartCoroutine(DestroyDelay());
@@ -27,6 +28,7 @@ public class Bullet : MonoBehaviour
         }
         if ((other.tag != Sender) && (other.tag != "UpgradePlatform") && (other.name != "Bullet(Clone)") && (other.tag != "Item") && (other.tag != "Item"))
         {
+            Instantiate(HitPartricle, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
