@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class UpgradePlatform : MonoBehaviour
 {
-    [SerializeField] private GameObject PrefabTurret;
+
     private Vector3 PlacePoint;
     private GameObject Slot;
-    DataBase db;
+    private DataBase db;
     private void Awake()
     {
-        var db = Resources.Load<DataBase>("Database");
+        db = Resources.Load<DataBase>("Database");
     }
     private void OnTriggerEnter(Collider other)
     {

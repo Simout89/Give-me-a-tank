@@ -37,7 +37,6 @@ public class EnemyNavMeshController : MonoBehaviour
         {
             case 0:
                 {
-                    Debug.Log(Vector3.Distance(SelectedPoint.position, transform.position));
                     if (Vector3.Distance(SelectedPoint.position, transform.position) < 1f)
                     {
                         GetNewPoint();
