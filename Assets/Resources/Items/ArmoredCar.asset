@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <itemName>k__BackingField: ArmoredCar
   <id>k__BackingField: 2
-  <ItemOnGround>k__BackingField: {fileID: 2176816173150214943, guid: a898efc26a0c9464c84a13230795d277, type: 3}
+  <ItemOnGround>k__BackingField: {fileID: 528131781662781152, guid: 872fa5f0e5174434c9ce272e50961025, type: 3}
   <Item>k__BackingField: {fileID: 0}
   <Score>k__BackingField: 200
   <LifeTime>k__BackingField: 0

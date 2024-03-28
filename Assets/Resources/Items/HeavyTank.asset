@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <itemName>k__BackingField: HeavyTank
   <id>k__BackingField: 4
-  <ItemOnGround>k__BackingField: {fileID: 2176816173150214943, guid: a898efc26a0c9464c84a13230795d277, type: 3}
+  <ItemOnGround>k__BackingField: {fileID: 3390180131692288813, guid: 7f2136ba621098f468cfec856a6ee2a3, type: 3}
   <Item>k__BackingField: {fileID: 0}
   <Score>k__BackingField: 400
   <LifeTime>k__BackingField: 0
