@@ -2763,7 +2763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: "\u0414\u043B\u044F \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F \u0432\u043F\u0435\u0440\u0435\u0434
     \u0438 \u043D\u0430\u0437\u0430\u0434 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-    W \u0438 D."
+    W \u0438 S."
 --- !u!4 &729353031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c38af37b52c27e04189a9d5f5eb3715e, type: 3}

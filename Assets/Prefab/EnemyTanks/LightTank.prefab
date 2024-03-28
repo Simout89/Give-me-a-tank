@@ -5043,7 +5043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxEnemyHealth: 2
-  ChanceDropItem: 5
+  ChanceDropItem: 10
   ItemCount: 1
   ShieldGameObject: {fileID: 3661565880678262805}
   DestrotyParticle: {fileID: 6380802408874117070, guid: 43de0313d08672d449f9c381de4b811b, type: 3}

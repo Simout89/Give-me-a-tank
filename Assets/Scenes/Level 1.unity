@@ -1837,6 +1837,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 5080189275793371164}
+    - target: {fileID: 8404179990001944135, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: MaxTankOnScene
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8697987169343405746, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.4
