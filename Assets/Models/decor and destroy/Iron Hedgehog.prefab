@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8150185394794271706}
+  - component: {fileID: 835644597209527999}
   - component: {fileID: -7686228891476200177}
   m_Layer: 0
   m_Name: Iron Hedgehog
@@ -36,6 +37,27 @@ Transform:
   - {fileID: 2696750375097605972}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &835644597209527999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045936010661068512}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6614262, y: 1.6202774, z: 1.5355201}
+  m_Center: {x: 0.41200572, y: 0.3101387, z: -0.18385124}
 --- !u!65 &-7686228891476200177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67,7 +89,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2696750375097605972}
   - component: {fileID: 6268689602671843338}
-  - component: {fileID: 3902052682916732475}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -98,27 +119,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930632607342462753}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &3902052682916732475
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930632607342462753}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.7330543, y: 1.9997791, z: 0.79238856}
-  m_Center: {x: 0.024242094, y: 0.4998895, z: -0.10380589}
 --- !u!1001 &3689701715014016184
 PrefabInstance:
   m_ObjectHideFlags: 0
