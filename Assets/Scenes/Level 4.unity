@@ -9161,6 +9161,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1204306797335257553, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1742913822}
+    - target: {fileID: 1204306797335257553, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitButton
+      objectReference: {fileID: 0}
     - target: {fileID: 3163155629105171778, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_text
       value: Menu
@@ -9266,6 +9274,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5953788667573703507, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
   m_PrefabInstance: {fileID: 1742913820}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1742913822 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7037566647748294500, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+  m_PrefabInstance: {fileID: 1742913820}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1a8efd6b93495a4a9b50ac918e6cfa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1744965071
 GameObject:
   m_ObjectHideFlags: 0
