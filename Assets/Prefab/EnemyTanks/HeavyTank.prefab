@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.52106285
       objectReference: {fileID: 0}
+    - target: {fileID: 5287255904721495977, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
+      propertyPath: ShootingDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7039935994479617966, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
       propertyPath: m_IsActive
       value: 0
