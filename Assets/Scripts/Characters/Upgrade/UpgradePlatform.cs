@@ -29,6 +29,7 @@ public class UpgradePlatform : MonoBehaviour
                 StartCoroutine(DeleteDelay(db.GetItemByID(playerInventory.Inventory).LifeTime, gameObject));
             }
             playerInventory.Inventory = -1;
+            PlayerInventory.OnChangeState.Invoke(-1);
         }
     }
     IEnumerator DeleteDelay(float time, GameObject item)
