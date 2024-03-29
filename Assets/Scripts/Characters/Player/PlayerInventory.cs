@@ -3,9 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 using UnityEngine;
+using UnityEngine.Events;
 public class PlayerInventory : MonoBehaviour
 {
+    public static UnityEvent<int> OnChangeState = new UnityEvent<int>();
     public int Inventory;
+    
 
     private void Awake()
     {
@@ -23,6 +26,7 @@ public class PlayerInventory : MonoBehaviour
     {
         if ((other.tag == "Item") && other.TryGetComponent(out IItem iItem))
         {
+            OnChangeState.Invoke(iItem.ID);
             Inventory = iItem.ID;
         }
     }
