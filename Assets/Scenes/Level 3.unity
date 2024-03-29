@@ -7969,11 +7969,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e2e920412a3544abcee8079918918e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light: 1
-  ArmoredCar: 1
-  Medium: 1
-  Heavy: 1
-  MaxTankOnScene: 1
+  Light: 10
+  ArmoredCar: 7
+  Medium: 3
+  Heavy: 0
+  MaxTankOnScene: 4
   SpawnDelay: 1
   TotalTank: 0
 --- !u!1 &4720886605954463678
@@ -14871,6 +14871,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1792821039}
     m_Modifications:
+    - target: {fileID: 923995916335178901, guid: 774f14932fea0b542827198deb26511c, type: 3}
+      propertyPath: HealthMax
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3532915979931363901, guid: 774f14932fea0b542827198deb26511c, type: 3}
       propertyPath: m_Name
       value: 1 little home
