@@ -27,7 +27,7 @@ public class PlayerInventory : MonoBehaviour
         if ((other.tag == "Item") && other.TryGetComponent(out IItem iItem))
         {
             Inventory = iItem.ID;
-            OnChangeState.Invoke(iItem.ID);
+            OnChangeState.Invoke(Inventory);
         }
     }
     //private void PlaceItem(Collider other)

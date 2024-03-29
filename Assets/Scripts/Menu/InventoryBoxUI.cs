@@ -17,6 +17,7 @@ public class InventoryBoxUI : MonoBehaviour
 
     private void HandleChangeState(int arg0)
     {
+        Debug.Log(arg0);
         if (arg0 != -1)
             image.sprite = db.GetItemByID(arg0).Icon;
         else
