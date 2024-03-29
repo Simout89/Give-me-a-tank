@@ -946,8 +946,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3190,10 +3190,10 @@ RectTransform:
   m_Children:
   - {fileID: 6336121061175766383}
   - {fileID: 6622319514236887009}
-  - {fileID: 6809130346807919813}
   - {fileID: 1302680711519563337}
   - {fileID: 6956427716641824515}
   - {fileID: 3961350540393039565}
+  - {fileID: 6809130346807919813}
   m_Father: {fileID: 8697987169343405746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
