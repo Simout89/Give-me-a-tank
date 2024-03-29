@@ -5975,7 +5975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stages: []
   HealthMax: 1
-  DestrotyParticle: {fileID: 0}
+  DestrotyParticle: {fileID: 6380802408874117070, guid: 43de0313d08672d449f9c381de4b811b, type: 3}
 --- !u!1001 &1662823695
 PrefabInstance:
   m_ObjectHideFlags: 0
