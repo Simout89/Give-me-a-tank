@@ -266,6 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stages: []
   HealthMax: 2
+  DestrotyParticle: {fileID: 6380802408874117070, guid: 43de0313d08672d449f9c381de4b811b, type: 3}
 --- !u!1001 &61477214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5428,6 +5429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stages: []
   HealthMax: 2
+  DestrotyParticle: {fileID: 6380802408874117070, guid: 43de0313d08672d449f9c381de4b811b, type: 3}
 --- !u!1001 &1415270506
 PrefabInstance:
   m_ObjectHideFlags: 0
