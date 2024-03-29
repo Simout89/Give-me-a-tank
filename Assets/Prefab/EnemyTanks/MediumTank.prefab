@@ -9873,7 +9873,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 5.39
-  m_Speed: 1
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -9930,8 +9930,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxEnemyHealth: 2
-  ChanceDropItem: 10
-  ItemCount: 2
+  ChanceDropItem: 6
+  ItemCount: 3
   ShieldGameObject: {fileID: 7039935994479617966}
   DestrotyParticle: {fileID: 6380802408874117070, guid: 43de0313d08672d449f9c381de4b811b, type: 3}
   Health: 0

@@ -37,7 +37,7 @@ public class EnemyHealth : MonoBehaviour,IDamageable , IEnemyShield, IItem
                 int id = rnd.Next(5, 5 + ItemCount);
                 GameObject item = Instantiate(db.GetItemByID(id).ItemOnGround, itemdroppos, Quaternion.identity);
                 if (item.TryGetComponent(out IItem iItem))
-                {
+                {   
                     iItem.ID = id;
                 }
             }
