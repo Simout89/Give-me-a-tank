@@ -36,6 +36,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 2.0500002
       objectReference: {fileID: 0}
+    - target: {fileID: 1811619209525803035, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
+      propertyPath: ItemCount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2176816173150214943, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
       propertyPath: m_Name
       value: HeavyTank

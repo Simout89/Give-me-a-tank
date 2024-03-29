@@ -9,8 +9,9 @@ public class ScoreOnScene : MonoBehaviour
 {
     public static UnityEvent<float> OnGetScore = new UnityEvent<float>();
 
-    private float Score;
-
+    public float Score;
+    private float _elapsedTime = 0f;
+    private string _timetext;
     private void Awake()
     {
         Score = 0;
@@ -19,7 +20,11 @@ public class ScoreOnScene : MonoBehaviour
 
     private void HandleGetScore(float arg0)
     {
-        Score += arg0;
+        Score += arg0 - (_elapsedTime / 10f );
         Debug.Log($"Получено {arg0} очков, всего: {Score}");
+    }
+    private void Update()
+    {
+        _elapsedTime += Time.deltaTime;
     }
 }
