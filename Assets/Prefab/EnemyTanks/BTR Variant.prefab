@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.85900015
       objectReference: {fileID: 0}
+    - target: {fileID: 1811619209525803035, guid: a898efc26a0c9464c84a13230795d277, type: 3}
+      propertyPath: MaxEnemyHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2176816173150214943, guid: a898efc26a0c9464c84a13230795d277, type: 3}
       propertyPath: m_Name
       value: BTR Variant
@@ -32,6 +36,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1055566023658873188, guid: 7b5a4653abebbe2489681216c06d94fa, type: 3}
+    - target: {fileID: 5287255904721495977, guid: a898efc26a0c9464c84a13230795d277, type: 3}
+      propertyPath: ShootingDelay
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7039935994479617966, guid: a898efc26a0c9464c84a13230795d277, type: 3}
       propertyPath: m_IsActive
       value: 0
