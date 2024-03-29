@@ -10,12 +10,17 @@ public class GunShooting : MonoBehaviour, IShootable, IGunChangeSettings
     [SerializeField] private Transform Muzzle;
     [SerializeField] private Transform Anchor;
     [SerializeField] private ParticleSystem FireParticle;
+    [SerializeField] private AudioClip FireSound;
     [Header("Settings")]
     [SerializeField] private float ForeBullet;
     [SerializeField] private float DamageBullet;
     [SerializeField] private float ShootingDelay;
+    private AudioSource audioSource;
     private bool ShootingReady = true;
-
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void FireRate(float fireRate)
     {
         ShootingDelay /= fireRate;
@@ -33,6 +38,7 @@ public class GunShooting : MonoBehaviour, IShootable, IGunChangeSettings
             bulletScript.Sender = transform.root.gameObject.tag;
             bulletScript.Damage = DamageBullet;
             FireParticle.Play();
+            audioSource.PlayOneShot(FireSound);
         }
     }
     private IEnumerator shootingDelay()

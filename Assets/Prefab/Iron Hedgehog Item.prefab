@@ -1,0 +1,329 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6859254044509921307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3934237477869717768}
+  - component: {fileID: 1884139857849469008}
+  - component: {fileID: 2982107137615655625}
+  m_Layer: 6
+  m_Name: Iron Hedgehog Item
+  m_TagString: Item
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3934237477869717768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859254044509921307}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37.65256, y: 16.50007, z: 21.308468}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 6493059576298721575}
+  - {fileID: 5981503483453043611}
+  - {fileID: 1183535733015926326}
+  - {fileID: 4791760513725155772}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1884139857849469008
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859254044509921307}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.253521, y: 3.5477514, z: 3.3618279}
+  m_Center: {x: 0.59679604, y: 0.84790087, z: -0.38297462}
+--- !u!114 &2982107137615655625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859254044509921307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bba12bcd1cab24586246ad276543d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedAnim: 2
+--- !u!1001 &2457232382872313921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3934237477869717768}
+    m_Modifications:
+    - target: {fileID: 1045936010661068512, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_Name
+      value: Iron Hedgehog (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -7686228891476200177, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 1930632607342462753, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+--- !u!4 &5981503483453043611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+  m_PrefabInstance: {fileID: 2457232382872313921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3098684519653425917
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3934237477869717768}
+    m_Modifications:
+    - target: {fileID: 1045936010661068512, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_Name
+      value: Iron Hedgehog
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -7686228891476200177, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 1930632607342462753, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+--- !u!4 &6493059576298721575 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+  m_PrefabInstance: {fileID: 3098684519653425917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3703232832456284774
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3934237477869717768}
+    m_Modifications:
+    - target: {fileID: 1045936010661068512, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_Name
+      value: Iron Hedgehog (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -7686228891476200177, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 1930632607342462753, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+--- !u!4 &4791760513725155772 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+  m_PrefabInstance: {fileID: 3703232832456284774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7023228472892802540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3934237477869717768}
+    m_Modifications:
+    - target: {fileID: 1045936010661068512, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_Name
+      value: Iron Hedgehog (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -7686228891476200177, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 1930632607342462753, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+--- !u!4 &1183535733015926326 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8150185394794271706, guid: 34a731051cbbe2b448c47077cfacab57, type: 3}
+  m_PrefabInstance: {fileID: 7023228472892802540}
+  m_PrefabAsset: {fileID: 0}

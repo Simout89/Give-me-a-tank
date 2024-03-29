@@ -37,8 +37,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1055566023658873188, guid: 7b5a4653abebbe2489681216c06d94fa, type: 3}
     - target: {fileID: 5287255904721495977, guid: a898efc26a0c9464c84a13230795d277, type: 3}
+      propertyPath: FireSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e30d2c4fdb1e3d54bac555beb115328f, type: 3}
+    - target: {fileID: 5287255904721495977, guid: a898efc26a0c9464c84a13230795d277, type: 3}
       propertyPath: ShootingDelay
-      value: 0.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7039935994479617966, guid: a898efc26a0c9464c84a13230795d277, type: 3}
       propertyPath: m_IsActive
