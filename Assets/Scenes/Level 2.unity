@@ -3647,7 +3647,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.060778145, z: 0.02}
   m_Center: {x: 0, y: 0.025110891, z: -3.3106674e-16}
@@ -5285,7 +5285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6506318151371490559, guid: 95d91ca6ec5179e4cbd074ba67efdf5c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.29
+      value: 16.965
       objectReference: {fileID: 0}
     - target: {fileID: 6506318151371490559, guid: 95d91ca6ec5179e4cbd074ba67efdf5c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5921,6 +5921,10 @@ PrefabInstance:
       value: 0.7175385
       objectReference: {fileID: 0}
     - target: {fileID: 1957139409436884806, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957139409436884806, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_Center.x
       value: -0.07868499
       objectReference: {fileID: 0}
@@ -5970,7 +5974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3196316144517275718, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3320753990237957412, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_Name
@@ -6047,6 +6051,10 @@ PrefabInstance:
     - target: {fileID: 8404179990001944135, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: MaxTankOnScene
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641255366598948330, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8697987169343405746, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9089,6 +9097,10 @@ PrefabInstance:
     - target: {fileID: 4263228211938582765, guid: 63656810909758540afa7ec363f3e3b8, type: 3}
       propertyPath: m_LocalPosition.z
       value: -43.28009
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504659550760347882, guid: 63656810909758540afa7ec363f3e3b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4504659550760347882, guid: 63656810909758540afa7ec363f3e3b8, type: 3}
       propertyPath: m_TagString
