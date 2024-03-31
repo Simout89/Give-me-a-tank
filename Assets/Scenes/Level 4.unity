@@ -10013,6 +10013,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 352513853044372657, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1515932349, guid: 53da598c879a4a248bd8181b10de735c, type: 3}
     - target: {fileID: 1957139409436884806, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_Size.x
       value: 3.5401406
@@ -10037,6 +10041,22 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.09547615
       objectReference: {fileID: 0}
+    - target: {fileID: 2092882801271267800, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092882801271267800, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092882801271267800, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391710246276052874, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1515932349, guid: 53da598c879a4a248bd8181b10de735c, type: 3}
     - target: {fileID: 2921643515611334948, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03
@@ -10057,6 +10077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameObject (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4750861594123895187, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4828109561781930676, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_NavMeshData
       value: 
@@ -10069,6 +10093,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 5253779838739347857, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6341222905420210373, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: Z
       value: 5.38
@@ -10108,6 +10136,14 @@ PrefabInstance:
     - target: {fileID: 6845694643243472261, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093477627135992431, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093477627135992431, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8404179990001944135, guid: f93728af0ffa25042b3b2fe2001e8915, type: 3}
       propertyPath: Heavy
