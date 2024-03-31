@@ -299,7 +299,7 @@ TextureImporter:
         width: 23
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 3, y: 3, z: 3, w: 3}
       outline: []
       physicsShape: []
@@ -307,6 +307,153 @@ TextureImporter:
       bones: []
       spriteID: ca486c86d6153284d894e379a420c08f
       internalID: 1515932349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart 0
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 496
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87d50720c0d0a843aa36ec2cc3264cd
+      internalID: -1698978427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart 1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 496
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85fbde9d093e8c468d780244c210d81
+      internalID: 417440581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart 2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 496
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d69f6ebba64299458c970ea243d6008
+      internalID: 1260193033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart 3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 496
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44dda57ffbee774392491ee83dfe755
+      internalID: 809180602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tank
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 494
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9324c7470817cb4ab9809c4ae97b540
+      internalID: 32235312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BreakHeart Left
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 497
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f424d1b8e162294aa11afe946d2239a
+      internalID: -1925474233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BreakHeart Right
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 497
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853b411eb9daf9746a525d637a0e4c19
+      internalID: 1466342410
       vertices: []
       indices: 
       edges: []
@@ -322,22 +469,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      BreakHeart Left: -1925474233
+      BreakHeart Right: 1466342410
+      Heart 0: -1698978427
+      Heart 1: 417440581
+      Heart 2: 1260193033
+      Heart 3: 809180602
+      Tank: 32235312
       Untitled 03-23-2024 08-46-11 (2)_0: 1197498554
       Untitled 03-23-2024 08-46-11 (2)_1: 1250479743
-      Untitled 03-23-2024 08-46-11 (2)_10: 965983456
-      Untitled 03-23-2024 08-46-11 (2)_11: 919645194
-      Untitled 03-23-2024 08-46-11 (2)_12: 794021201
-      Untitled 03-23-2024 08-46-11 (2)_13: -1423940412
-      Untitled 03-23-2024 08-46-11 (2)_14: 398391006
-      Untitled 03-23-2024 08-46-11 (2)_15: -466381061
-      Untitled 03-23-2024 08-46-11 (2)_2: 1515932349
-      Untitled 03-23-2024 08-46-11 (2)_3: -1698978427
-      Untitled 03-23-2024 08-46-11 (2)_4: 415487628
-      Untitled 03-23-2024 08-46-11 (2)_5: -1468461226
-      Untitled 03-23-2024 08-46-11 (2)_6: 621045004
-      Untitled 03-23-2024 08-46-11 (2)_7: -690666469
-      Untitled 03-23-2024 08-46-11 (2)_8: -1149432017
-      Untitled 03-23-2024 08-46-11 (2)_9: -1313954852
+      Untitled 03-23-2024 08-46-11 (2)_10: 1515932349
+      Untitled 03-23-2024 08-46-11 (2)_11: -1698978427
+      Untitled 03-23-2024 08-46-11 (2)_12: 415487628
+      Untitled 03-23-2024 08-46-11 (2)_13: -1468461226
+      Untitled 03-23-2024 08-46-11 (2)_14: 621045004
+      Untitled 03-23-2024 08-46-11 (2)_15: -690666469
+      Untitled 03-23-2024 08-46-11 (2)_2: -1149432017
+      Untitled 03-23-2024 08-46-11 (2)_4: 965983456
+      Untitled 03-23-2024 08-46-11 (2)_5: 919645194
+      Untitled 03-23-2024 08-46-11 (2)_6: 794021201
+      Untitled 03-23-2024 08-46-11 (2)_7: -1423940412
+      Untitled 03-23-2024 08-46-11 (2)_8: 398391006
+      Untitled 03-23-2024 08-46-11 (2)_9: -466381061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

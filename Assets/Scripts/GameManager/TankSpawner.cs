@@ -30,6 +30,7 @@ public class TankSpawner : MonoBehaviour, IItem
         Tank[2] = Medium;
         Tank[3] = Heavy;
         TotalTank = Light + ArmoredCar + Medium + Heavy;
+        EventManager.OnTankChangeCount.Invoke(TotalTank);
     }
 
     private void FixedUpdate()
@@ -47,11 +48,15 @@ public class TankSpawner : MonoBehaviour, IItem
                 {
                     iItem.ID = i + 1;
                 }
+                EventManager.OnTankChangeCount.Invoke(TotalTank+ (GameObject.FindGameObjectsWithTag("Enemy").Length));
                 StartCoroutine(Delay());
             }
         }
         if ((TotalTank == 0) && ((GameObject.FindGameObjectsWithTag("Enemy").Length == 0)))
+        {
+            EventManager.OnTankChangeCount.Invoke(TotalTank + (GameObject.FindGameObjectsWithTag("Enemy").Length));
             EventManager.OnGameWin.Invoke();
+        }
     }
     private IEnumerator Delay()
     {

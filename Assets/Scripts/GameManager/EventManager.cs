@@ -9,4 +9,6 @@ public class EventManager : MonoBehaviour
     public static UnityEvent OnObjectPlace = new UnityEvent();
     public static UnityEvent OnGameLose = new UnityEvent();
     public static UnityEvent OnGameWin = new UnityEvent();
+    public static UnityEvent OnLiveLose = new UnityEvent();
+    public static UnityEvent<int> OnTankChangeCount = new UnityEvent<int>();
 }

@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
             Health = HealthMax;
             Lives--;
             transform.position = Startpos;
+            EventManager.OnLiveLose.Invoke();
             if(Lives <= 0)
             {
                 EventManager.OnGameLose.Invoke();
