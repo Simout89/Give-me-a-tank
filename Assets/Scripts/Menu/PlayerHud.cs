@@ -17,6 +17,11 @@ public class PlayerHud : MonoBehaviour
         EventManager.OnGameLose.AddListener(HandleGameLose);
         EventManager.OnGameWin.AddListener(HandleGameWin);
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            MenuButton();
+    }
 
     private void HandleGameWin()
     {
@@ -31,6 +36,7 @@ public class PlayerHud : MonoBehaviour
     }
     public void RestartButton()
     {
+
         DOTween.KillAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1f;
@@ -44,9 +50,14 @@ public class PlayerHud : MonoBehaviour
     public void MenuButton()
     {
         Menu.SetActive(!Menu.active);
+        if (Menu.active)
+            Time.timeScale = 0f;
+        else
+            Time.timeScale = 1f;
     }
     public void ExitButton()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
     public void VolumeSlider()
