@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_BaseOffset
       value: 2.63
       objectReference: {fileID: 0}
+    - target: {fileID: 94790878246206093, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 944830436893235579, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.020200003
@@ -91,6 +95,14 @@ PrefabInstance:
     - target: {fileID: 4155254271335300478, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
       propertyPath: m_Center.z
       value: 0.52106285
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155254271335300478, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155254271335300478, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5287255904721495977, guid: b185497e491ea7e4ca0a132916714f76, type: 3}
       propertyPath: ShootingDelay
