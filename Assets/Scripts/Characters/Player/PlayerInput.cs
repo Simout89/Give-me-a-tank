@@ -14,6 +14,7 @@ public class PlayerInput : MonoBehaviour
     private void Awake()
     {
         OnInputState.AddListener(HandleInputState);
+        Application.targetFrameRate = 300;
     }
 
     private void HandleInputState(bool arg0)
